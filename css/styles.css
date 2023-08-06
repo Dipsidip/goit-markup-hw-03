@@ -24,12 +24,16 @@ img {
 p {
     margin: 0;
 }
+
 .header-container {
     display: flex;
     padding: 0 15;
     width: 1158px;
     align-items: center;
     border-bottom: 1px solid #E7E9FC;
+}
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
 }
 .page-header .container {
     display: flex;
@@ -142,7 +146,8 @@ body {
     font-style: normal;
 }
 .adress-list {
-      display: flex; 
+      display: flex;
+      gap: 40px;
 }
 
 .adress-list .adress-item:first-child {
@@ -173,9 +178,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 48px;
-    padding-top: 188px;
+    max-width: 496px;
+    text-align: center;
 }
 
 .button {
@@ -186,12 +190,12 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    cursor: pointer; 
+    display: block;
+    min-width: 169p;
+    height: 56px;
+    border: none;
     border-radius: 4px;
-    padding: 16px 32px;
-    min-width: 169px;
-    text-align: center;
-    margin: 48px 188px; 
+    cursor: pointer;
 }
 
 .button:hover {
@@ -211,7 +215,7 @@ body {
 max-width: 360px;
 }
 .goals {
-    padding: 60px 0;
+    padding: 120px 0;
 }
 .goals-title {
     font-weight: 500;
@@ -233,7 +237,7 @@ max-width: 360px;
 .goals-item {
     display: block;
     max-width: 264px;
-    width: calc(100%-((24px)*((4)-1)))/(4);
+    width: calc((100%-72px)/4)
 }
 
 .goals-subject {
@@ -267,6 +271,7 @@ max-width: 360px;
 }
 .advantages-list {
     display: flex;
+    gap: 24px;
     
 }
 .advantages-list-images {
@@ -284,6 +289,7 @@ max-width: 360px;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
+    width: calc((100%-72px)/4);
 }
 .team-photo {
     background-color: #FFFFFF;
@@ -299,6 +305,7 @@ max-width: 360px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 8px;
 }
 .team-position {
     font-size: 16px;
@@ -312,7 +319,9 @@ max-width: 360px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 0;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .logo-footer {
     color: #F4F4FD; 
@@ -339,14 +348,16 @@ max-width: 360px;
 .button-filters:hover {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid;
 
 }
 .button-filters:focus {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid;
 }
 
-.potfolio-section {
+.portfoio-section {
     padding: 96px 0 120px 0;
 }
 
@@ -366,6 +377,7 @@ max-width: 360px;
     justify-content: flex-start;
     border-top: none;
     padding: 32px 32px;
+    margin-bottom: 8px;
 }
 
 .portfolio-picture {
