@@ -1,17 +1,15 @@
+html {
+    box-sizing: border-box;
+}
 
 *,
 *::after,
 ::before {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
-img {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     --main-text-style: Roboto, sans-serif; 
@@ -28,28 +26,16 @@ body {
 
 .list {
     list-style: none;
-    display: flex;
 }
 .link {
     list-style: none;
     text-decoration: none;
 }
-.link .adinfo:hover {
-    color: #404bbf;
-}
+.link .adinfo:hover,
 .link .adinfo:focus {
     color: #404bbf;
 }
 
-
-
-/* .page-header .container {
-    display: flex;
-    padding: 0 15px;
-    width: 1158px;
-    align-items: center;
-    border-bottom: 1px;
-} */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
 }
@@ -83,15 +69,15 @@ body {
 }
 .logo-footer-logo {
     font-family: Raleway, sans-serif;
-        font-weight: 800;
-        font-size: 18px;
-        display: inline-block;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4D5AE5;
-        display: inline-block;
-        margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-header {
     letter-spacing: 0.03em;
@@ -99,11 +85,8 @@ body {
 }
 
 .header-nav-list {
-    display: inline-flex;
-    align-items: flex-start;
-    padding: 24px 24px;
+    display: flex;
     gap: 40px;
-
 }
 .header-nav-menu {
     font-weight: 500;
@@ -111,18 +94,14 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.header-nav-menu:hover {
-    color: #404bbf;
-}
+.header-nav-menu:hover
 .header-nav-menu:focus {
     color: #404bbf;
 }
-
-
-
 
 
 .adress {
@@ -133,32 +112,26 @@ body {
       gap: 40px;
 }
 
-.adress-list .adress-item:first-child {
+/* .adress-list .adress-item:first-child {
     margin-right: 40px;
-}
+} */
 .adress-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.adress-link:hover {
-    color: #404bbf;
-}
+.adress-link:hover,
 .adress-link:focus {
     color: #404bbf;
 }
+
 
 .hero-section {
     background-color: #2E2F42;  
     padding: 188px 0;
 }
 
-/* .hero-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .hero-title {
     font-size: 56px;
@@ -172,23 +145,6 @@ body {
     margin-bottom: 48px;
 }
 
-
-/* .button {
-    background-color: #4D5AE5;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    display: block;
-    min-width: 169p;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom:  48px;
-} */
 
 .button {
     min-width: 169px;
@@ -209,12 +165,9 @@ body {
 
 }
 
-.button:hover {
-    background-color: #404BBF;
-}
-
+.button:hover, 
 .button:focus {
-    background-color: #404BBF
+    background-color: #404BBF;
 }
 
 .goals {
@@ -250,9 +203,7 @@ body {
     gap: 24px;
 }
 .goals-container {
-    flex-wrap: wrap;
-    gap: 24px;
-    align-items: center;
+
 }
 
 .goals-item {
@@ -301,7 +252,7 @@ body {
 }
 
 .container.team {
-     padding: ;
+     
 }
 
 .team-title {
@@ -309,6 +260,7 @@ body {
     padding: 120px 0;
 }
 .team-list {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
@@ -353,6 +305,7 @@ body {
 
 
 .nav-button-list {
+    display: flex;
     gap: 24px;
     justify-content: center;
     margin-bottom: 72px;
@@ -367,7 +320,6 @@ max-width: 360px;
 .logo-footer {
     color: #F4F4FD; 
     display: inline-block;
-    margin-bottom: 16px;
     margin-bottom: 16px;
 }
 .logo-link {
@@ -408,6 +360,7 @@ max-width: 360px;
 }
 
 .portfolio-list {
+    display: flex;
     flex-wrap: wrap;
     row-gap:  48px;
     column-gap: 24px;
@@ -425,17 +378,7 @@ max-width: 360px;
 }
 
 .portfolio-picture {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    padding: 0;
-    margin: 0;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-                0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    width: calc((100% - 48px) / 3);
+
 }
 
 
