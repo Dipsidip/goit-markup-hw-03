@@ -10,6 +10,10 @@ html {
     box-sizing: inherit;
 }
 
+img {
+    display: block;
+}
+
 
 :root {
     --main-text-style: Roboto, sans-serif; 
